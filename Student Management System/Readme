@@ -1,0 +1,44 @@
+# Student Management System
+
+## Overview
+The **Student Management System** is a database project designed to manage student records, course enrollments, faculty assignments, attendance tracking, and exam results.
+
+## Features
+- Store and manage student details.
+- Track course information and enrollment records.
+- Maintain faculty details and class schedules.
+- Record attendance status for students in classes.
+- Manage exams and results for students.
+
+## Database Schema
+The project includes the following tables:
+1. **Students**: Stores student details.
+2. **Courses**: Contains information about courses.
+3. **Enrollments**: Tracks student enrollments in courses.
+4. **Faculty**: Manages faculty details.
+5. **Classes**: Links courses to faculty with schedule and location.
+6. **Attendance**: Tracks student attendance in classes.
+7. **Exams**: Records details about exams.
+8. **Results**: Stores student exam performance.
+
+## Technologies
+- **Database**: MySQL
+- **SQL Syntax**: Used for table creation and data manipulation.
+
+## Table Relationships
+- **Students ↔ Enrollments**: Tracks which courses students are enrolled in.
+- **Courses ↔ Classes**: Connects courses to faculty and schedules.
+- **Students ↔ Attendance**: Tracks attendance for students in specific classes.
+- **Courses ↔ Exams ↔ Results**: Links courses, exams, and student results.
+
+## Local Setup
+ We are using **Node.js + Express.js** backend for the Student Management System
+ 1. *Install necessary packages:*
+    a. **npm init -y**
+    b. **npm install express mysql body-parser**
+2. Create the database **student_management** and tables using the earlier SQL schema. Add some sample data to test.
+3.  Run the Application : **node server.js**
+
+
+
+
